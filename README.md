@@ -1,4 +1,4 @@
-# Mayın Tarlasi
+# Minefield
 
 ## Project setup
 ```
