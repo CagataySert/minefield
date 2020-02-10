@@ -1,17 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" width="250" height="200">
-    <HelloWorld msg="Mayın Tarlası"/>
+  <div class="container mt-5">
+    <Header />
+    <StartRow />
+    <div class="row mt-5">
+      <div class="col-7">
+        <MineBoxLayout />
+      </div>
+      <div class="col-5">
+        <UserPointList />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import Header from '../components/Header';
+import StartRow from '../components/StartRow';
+import UserPointList from '../components/UserPointList';
+import MineBoxLayout from '../components/MineBoxLayout';
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    Header,
+    StartRow,
+    UserPointList,
+    MineBoxLayout
   }
-}
+};
 </script>
